@@ -14,6 +14,7 @@ except ImportError:
         raise Exception('Cannot use django-postmark without Python 2.6 or greater, or Python 2.4 or 2.5 and the "simplejson" library')
         
 from postmark.signals import post_send
+from postmark import models
 
 # Settings
 POSTMARK_API_KEY = getattr(settings, "POSTMARK_API_KEY", None)
