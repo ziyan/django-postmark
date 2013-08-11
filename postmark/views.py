@@ -76,7 +76,7 @@ def bounce(request):
                 "details": bounce_dict["Details"],
                 "inactive": bounce_dict["Inactive"],
                 "can_activate": bounce_dict["CanActivate"],
-                "bounced_at": iso8601.parse_date(resp["BouncedAt"]),
+                "bounced_at": iso8601.parse_date(bounce_dict["BouncedAt"]),
             }
         )
         
