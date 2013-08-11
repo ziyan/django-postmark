@@ -7,7 +7,7 @@ setup(
     author_email = "donald@e.vilgeni.us",
     description = "A Django reusable app to send email with postmark, as well as models and views to handle bounce integration.",
     long_description = open("README.rst").read(),
-    url = "http://github.com/dstufft/django-postmark/",
+    url = "http://github.com/ziyan/django-postmark/",
     license = "BSD",
     install_requires = [
         "httplib2",
