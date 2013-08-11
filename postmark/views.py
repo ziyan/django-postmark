@@ -69,7 +69,7 @@ def bounce(request):
         em = get_object_or_404(EmailMessage, message_id=bounce_dict["MessageID"], to=bounce_dict["Email"])
         eb, created = EmailBounce.objects.get_or_create(
             id=bounce_dict["ID"],
-            default={
+            defaults={
                 "message": em,
                 "type": bounce_dict["Type"],
                 "description": bounce_dict["Description"],
