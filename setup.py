@@ -11,7 +11,7 @@ setup(
     license = "BSD",
     install_requires = [
         "httplib2",
-        "pytz",
+        "iso8601",
     ],
     packages = [
         "postmark",
